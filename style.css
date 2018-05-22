@@ -1,0 +1,164 @@
+body {
+    font-size: .875rem;
+}
+
+.feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+}
+
+
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    /* Behind the navbar */
+    padding: 48px 0 0;
+    /* Height of navbar */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+    .sidebar-sticky {
+        position: -webkit-sticky;
+        position: sticky;
+    }
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+
+.sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+
+
+/*
+ * Content
+ */
+
+[role="main"] {
+    padding-top: 48px;
+    /* Space for fixed navbar */
+}
+
+
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 18px;
+
+    background-color: #292929;
+}
+
+.bg-dark {
+    background-color: #393836!important;
+}
+
+.navbar .form-control {
+    padding: .75rem 1rem;
+    border-width: 0;
+    border-radius: 0;
+}
+
+.form-control-dark {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+
+
+/*
+ * Utilities
+ */
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+/****************************************/
+
+#page-inner {
+    margin: 20px 0px 10px 0px;
+    /*min-height: 1200px; */
+}
+
+.nav-pills>a {
+    color: #FFFFFF;
+    padding: 18px 16px 14px 16px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(107, 108, 109, 0.19);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: #33B35A !important;
+    color: #FFFFFF !important;
+}
+
+a.list-group-item {
+    font-size: 15px;
+    color: #555;
+}
+
+.list-group-item:hover {
+    color: #fff;
+    background-color: #393836;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+p {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 8px 0px;
+    color: #f1f1f1;
+    line-height: 1.1;
+    font-family: 'Open Sans', sans-serif;
+}
