@@ -147,7 +147,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <!-- Custom Js -->
-    <script src="custom-scripts.js"></script>
+    <script>
+        function btcFunc() {
+    var copyText = document.getElementById("BTC");
+    copyText.select();
+    document.execCommand("Copy");
+}
+
+function ltcFunc() {
+    var copyText = document.getElementById("LTC");
+    copyText.select();
+    document.execCommand("Copy");
+}
+
+function bchFunc() {
+    var copyText = document.getElementById("BCH");
+    copyText.select();
+    document.execCommand("Copy");
+}
+
+function dogFunc() {
+    var copyText = document.getElementById("DOG");
+    copyText.select();
+    document.execCommand("Copy");
+}
+    </script>
 </body>
 
 </html>
